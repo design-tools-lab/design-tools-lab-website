@@ -234,6 +234,7 @@ main>img {
     object-fit: cover;
     margin-bottom: 10px;
     border-radius: 7px;
+    aspect-ratio: 1 / 1;
 }
 
 .person .name {
