@@ -52,6 +52,6 @@ You can add these properties:
 | img | path to thumbnail image | ✅ | "assets/images/publications/plushpal.png" |
 | video | link to a video | | "https://www.youtube.com/watch?v=f4w3Z09Ka7A" |
 | presentation | link to presentation video | | "https://www.youtube.com/watch?v=Pez3hD0dRVU" | 
-| areas | array of research areas for tagging purposes (can choose from machine-learning, electronics, design-documentation, and visual-arts) | | ["machine-learning", "electronics"] |
+| areas | array of research areas for tagging purposes (can choose from machine-learning, electronics, documentation, and visual-arts) | | ["machine-learning", "electronics"] |
 | presentation | link to presentation video | | "https://www.youtube.com/watch?v=Pez3hD0dRVU" |
 | award | description of any associated paper awards | | "best paper" |

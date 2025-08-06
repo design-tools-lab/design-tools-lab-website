@@ -8,4 +8,5 @@ date: 2025-06-23
 year: 2025
 img: "assets/images/publications/journaling-cc.png"
 doi: "https://arxiv.org/pdf/2504.19767"
+areas: ["documentation"]
 ---
