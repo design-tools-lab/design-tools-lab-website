@@ -1,0 +1,16 @@
+    <div class="alum">
+        <h3>Alumni</h3>
+            {%- for person in collections.alumni -%}
+            <p>
+                {%- if (person.data.website) -%}
+                <a href="{{ person.data.website }}" target="_external">    
+                    {{ person.data.name }}
+                </a>
+                {%- else -%}
+                    {{ person.data.name }}
+                {%- endif -%}
+                ({{ person.data.dates }})
+            </p>
+            {%- endfor -%}
+            
+    </div>

@@ -7,7 +7,7 @@ It's built with [11ty](https://www.11ty.dev).
 ## Setup
 1. Clone this repo 
 ```bash
-git clone git@github.com:ttseng/design-tools-lab.git
+git clone git@github.com:design-tools-lab/design-tools-lab-website.git
 ````
 
 2. Install the requirements
