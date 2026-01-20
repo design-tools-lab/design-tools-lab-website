@@ -8,6 +8,6 @@ date: 2024-02-08
 year: 2024
 img: "assets/images/publications/keyframer.gif"
 doi: "https://arxiv.org/pdf/2402.06071"
-video: "https://machinelearning.apple.com/research/keyframer"
+video: "https://drive.google.com/file/d/1RO8X-h3JGezbF5AAt_-To6IAC-UTW405/view?usp=sharing"
 areas: ["machine-learning", "visual-arts"]
 ---
