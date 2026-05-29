@@ -12,5 +12,5 @@ date: 2014-06-21
 year: 2014
 img: "assets/images/publications/product-vs-process.png"
 doi: "https://tifftseng.com/papers/product-versus-process-dis.pdf"
-areas: ["design documentation"]
+areas: ["documentation"]
 ---
