@@ -1,10 +1,14 @@
 :root {
     --blue: #2C70FF;
+    --lightBlue: #6a98fd;
     --green:#9ffd9f;
-    --cerulean:#a7daff;
-    --lightOrange:#ffb3a3;
-    --orange: #f8a625;
+    --lightGreen: #ebffeb;
+    --cerulean: #6694f8;
+    --lightCerulean: #d1e8f9;
+    --orange:#ffb3a3;
+    --lightOrange: #f9e8d0;
     --purple:#ffafff;
+    --lightPurple: #fee5fe;
     --gray: #676767;
 }
 
@@ -24,7 +28,6 @@ html {
 body {
     font-family: "IBM Plex Sans", sans-serif;
     line-height: 1.5;
-    font-weight: 200;
 }
 
 h1, h2, h3 {
@@ -37,17 +40,26 @@ h1 {
 
 h2 {
     font-size: 2em;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+    font-weight: 450;
 }
 
 h3{
+    font-size: 1.5em;
     margin: 20px 0;
+    font-weight: 300;
 }
 
 a {
     text-decoration: none;
     color: var(--blue);
     font-weight: 400;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+}
+
+a:hover {
+    background-size: 100% 1px;
 }
 
 img {
@@ -57,17 +69,17 @@ img {
 
 p {
     margin: 10px 0;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 hr {
     border: 0;
-    border-bottom: solid 1.5px #d9d9d9;
+    border-bottom: solid 1px #eeeeee;
     margin: 10px 0;
 }
 
 b {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 nav {
@@ -90,12 +102,12 @@ nav .left {
 
 nav .left img {
     width: 30px;
+    margin-right: 5px;
 }
 
 nav .left .title {
-    font-weight: 600;
+    font-weight: 400;
     color: black;
-    font-size: larger;
 }
 
 nav .right {
@@ -105,10 +117,11 @@ nav .right {
 
 nav>a {
     display: block;
+    background-image: none;
 }
 
 nav>a:hover {
-    color: aqua;
+    color: var(--lightBlue);
 }
 
 .spacer {
@@ -117,10 +130,8 @@ nav>a:hover {
 
 .highlight {
     font-weight: 500;
-    font-size: large;
-    line-height: 24px;
-    color: var(--blue);
     margin: 30px 0;
+    color: var(--blue);
 }
 
 main {
@@ -143,9 +154,21 @@ main>img {
     gap: 5em;
 }
 
+.banner .affilitation {
+    font-weight: 200;
+}
+
 .banner img {
-    margin: 0 auto;
-    max-width: 250px;
+    margin: 10px 0;
+    max-width: 200px;
+}
+
+.banner .description {
+    margin: 20px 0;
+}
+
+.banner .light {
+    color: #787878;
 }
 
 .section {
@@ -153,9 +176,8 @@ main>img {
 }
 
 .publication {
-    margin: 10px 0;
     border-top: 0.5px solid #cccccc;
-    padding: 10px 0;
+    padding: 30px 0;
 }
 
 .publication .thumbnail {
@@ -182,8 +204,8 @@ main>img {
 }
 
 .publication .title {
-    font-weight: 600;
-    font-size: 1.5em;
+    font-weight: 500;
+    font-size: 1.25em;
     line-height: 1.1em;
     margin-bottom: 7px;
 }
@@ -212,8 +234,13 @@ main>img {
     display: flex;
     gap: 1em;
     font-size: smaller;
-    margin-top: -3px;
+    margin-top: -20px;
 }
+
+.publication .links a {
+    background-position: 0 calc(100% - 0.7em);
+}
+
 .award {
     background: gold;
     border-radius: 3px;
@@ -226,7 +253,6 @@ main>img {
     flex-wrap: wrap;
 }
 .person {
-    text-align: center;
     display: inline-block;
 }
 
@@ -238,30 +264,37 @@ main>img {
 }
 
 .person .name {
-    font-size: large;
-    font-weight: 700;
+    font-weight: 500;
+}
+
+.person .role {
+    font-size: small;
 }
 
 .area {
     color: black;
     padding: 0px 4px 2px;
-    border-radius: 4px;
+    border-radius: 9px;
 }
 
 .area.machine-learning {
-    background: var(--green);
+    border: 1px solid var(--green);
+    background-color: var(--lightGreen);
 }
 
 .area.visual-arts {
-    background: var(--purple);
+    border: 1px solid var(--purple);
+    background-color: var(--lightPurple);
 }
 
 .area.electronics {
+    border: 1px solid var(--orange);
     background: var(--lightOrange);
 }
 
 .area.documentation {
-    background: var(--cerulean);
+    border: 1px solid var(--cerulean);
+    background: var(--lightCerulean);
 }
 
 .area.badge {
@@ -276,25 +309,21 @@ main>img {
     height: 10px;
 }
 
-.join {
-    border-radius: 6px;
-    padding: 20px 30px;
-    border: 7px solid;
-    border-image: linear-gradient(to right, #28FFBB, #FFFA06, #FFFA06, #C9FF27, #C9FF27, #EE9EFF) 5;
-}
-
-.gradient-fill {
+.callout {
     display: inline-block;
     border-radius: 5px;
-    border: 5px solid;
-    border-image: linear-gradient(to right, #28FFBB, #FFFA06, #FFFA06, #C9FF27, #C9FF27, #EE9EFF) 5;
+    background: var(--lightGreen);
     padding: 15px 10px;
     font-weight: 500;
     margin-top: 30px;
 }
 
-.gradient-fill a {
+.callout a {
     font-weight: bold;
+}
+
+.alum p {
+    margin: 5px 0;
 }
 
 .join h3 {
@@ -306,37 +335,28 @@ main>img {
     display: inline;
 }
 
-.join a {
-    font-weight: bold;
-}
-
 footer {
     text-align: center;
     font-size: small;
+    margin: 30px 0;
+    color: darkgrey;
 }
 
 @media (max-width: 750px) {
     main {
         padding: 1rem 2rem;
     }
-    .banner {
-        text-align: center;
-    }
-    .banner .description {
-        margin: 15px 0;
-        text-align: initial;
-    }
     .banner hr {
         margin: 20px 0;
     }
     .banner img {
-        max-width: 200px;
+        max-width: 125px;
     }
     .people {
         justify-content: space-evenly;
     }
     .person img {
-        width: 200px;
+        width: 150px;
     }
     .join {
         margin: 20px 0;
