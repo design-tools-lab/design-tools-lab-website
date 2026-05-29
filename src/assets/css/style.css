@@ -234,7 +234,6 @@ main>img {
     display: flex;
     gap: 1em;
     font-size: smaller;
-    margin-top: -20px;
 }
 
 .publication .links a {
@@ -354,6 +353,7 @@ footer {
     }
     .people {
         justify-content: space-evenly;
+        gap: 1em;
     }
     .person img {
         width: 150px;
