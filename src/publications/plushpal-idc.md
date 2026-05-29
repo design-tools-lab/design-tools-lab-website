@@ -2,7 +2,7 @@
 tags: publications
 title: "PlushPal: Storytelling with interactive plush toys and machine learning"
 authors: "Tiffany Tseng, Yumiko Murai, Natalie Freed, Deanna Gelosi, Tung D Ta, Yoshihiro Kawahara"
-description: "This paper presents PlushPal, a web-based design tool for children to make plush toys interactive with machine learning (ML). With PlushPal, children attach micro:bit hardware to stuffed animals, design custom gestures for their toy, and build gesture-recognition ML models to trigger their own sounds. We describe how, in the context of storytelling, PlushPal introduces core concepts in ML including data sampling and model evaluation. "
+description: "This paper presents PlushPal, a web-based design tool for children to make plush toys interactive with machine learning (ML). With PlushPal, children attach micro:bit hardware to stuffed animals, design custom gestures for their toy, and build gesture-recognition ML models to trigger their own sounds.  "
 conference: "IDC"
 date: 2021-06-24
 year: 2021

@@ -9,5 +9,5 @@ year: 2016
 img: "assets/images/publications/spin.png"
 doi: "https://dl.acm.org/doi/abs/10.1145/2901790.2901868"
 video: "https://vimeo.com/791383872"
-areas: ["documentation"]
+areas: ["design documentation"]
 ---

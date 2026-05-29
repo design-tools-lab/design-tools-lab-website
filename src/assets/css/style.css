@@ -4,7 +4,7 @@
     --green:#9ffd9f;
     --lightGreen: #ebffeb;
     --cerulean: #6694f8;
-    --lightCerulean: #c2e2fa;
+    --lightCerulean: #d1e8f9;
     --orange:#ffb3a3;
     --lightOrange: #f9e8d0;
     --purple:#ffafff;
@@ -39,12 +39,13 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    font-weight: 400;
+    font-size: 2em;
+    margin-bottom: 25px;
+    font-weight: 450;
 }
 
 h3{
+    font-size: 1.5em;
     margin: 20px 0;
     font-weight: 300;
 }
@@ -53,11 +54,8 @@ a {
     text-decoration: none;
     color: var(--blue);
     font-weight: 400;
-    background-image: linear-gradient(currentColor, currentColor);
     background-position: 0 100%;
     background-repeat: no-repeat;
-    background-size: 0% 1px;
-    transition: background-size 0.3s ease;
 }
 
 a:hover {
@@ -131,9 +129,9 @@ nav>a:hover {
 }
 
 .highlight {
-    font-weight: 400;
-    color: var(--blue);
+    font-weight: 500;
     margin: 30px 0;
+    color: var(--blue);
 }
 
 main {
@@ -153,15 +151,24 @@ main>img {
 
 .banner {
     margin: 0 auto;
+    gap: 5em;
+}
+
+.banner .affilitation {
+    font-weight: 200;
 }
 
 .banner img {
     margin: 10px 0;
-    max-width: 75px;
+    max-width: 200px;
 }
 
 .banner .description {
     margin: 20px 0;
+}
+
+.banner .light {
+    color: #787878;
 }
 
 .section {
@@ -169,9 +176,8 @@ main>img {
 }
 
 .publication {
-    margin: 10px 0;
     border-top: 0.5px solid #cccccc;
-    padding: 10px 0;
+    padding: 30px 0;
 }
 
 .publication .thumbnail {
@@ -228,12 +234,13 @@ main>img {
     display: flex;
     gap: 1em;
     font-size: smaller;
-    margin-top: -3px;
+    margin-top: -20px;
 }
 
 .publication .links a {
     background-position: 0 calc(100% - 0.7em);
 }
+
 .award {
     background: gold;
     border-radius: 3px;
@@ -302,12 +309,6 @@ main>img {
     height: 10px;
 }
 
-.join {
-    border-radius: 6px;
-    padding: 15px 30px;
-    background: #fffdd4;
-}
-
 .callout {
     display: inline-block;
     border-radius: 5px;
@@ -322,7 +323,7 @@ main>img {
 }
 
 .alum p {
-    font-size: small;
+    margin: 5px 0;
 }
 
 .join h3 {
@@ -334,14 +335,11 @@ main>img {
     display: inline;
 }
 
-.join a {
-    font-weight: bold;
-}
-
 footer {
     text-align: center;
     font-size: small;
-    margin-top: 20px;
+    margin: 30px 0;
+    color: darkgrey;
 }
 
 @media (max-width: 750px) {
@@ -350,6 +348,9 @@ footer {
     }
     .banner hr {
         margin: 20px 0;
+    }
+    .banner img {
+        max-width: 125px;
     }
     .people {
         justify-content: space-evenly;
@@ -366,6 +367,9 @@ footer {
 }
 
 @media (min-width: 750px) {
+    .banner {
+        display: flex;
+    }
     .publication {
         display: flex;
         gap: 1em;
