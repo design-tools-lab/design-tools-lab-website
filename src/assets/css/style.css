@@ -311,10 +311,10 @@ main>img {
 .callout {
     display: inline-block;
     border-radius: 5px;
-    background: var(--lightGreen);
+    background: #fcffaf;
     padding: 15px 10px;
     font-weight: 500;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .callout a {
